@@ -1,4 +1,4 @@
-# Portifólio de Exercícios - Juliana Marques Turma 30-A 
+# Portfólio de Exercícios - Juliana Marques Turma 30-A 
 
 Contém as atividades desenvolvidas durante o processo de aprendizagem na Trybe. 
 
