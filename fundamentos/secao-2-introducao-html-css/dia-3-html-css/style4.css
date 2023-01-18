@@ -1,5 +1,5 @@
 div:hover {
-    border: 3px solid rgb(105, 4, 105);
+    border: 3px solid rgb(128, 17, 118);
 }
 div:nth-of-type(1) {
     background-color: rgb(236, 181, 236);
@@ -19,16 +19,26 @@ div:nth-of-type(5) {
 }
 div:nth-of-type(1) > h3 {
     color: purple;
+  
 }
 div:nth-of-type(2) > h3 {
     color: blueviolet;
 }
 div:nth-of-type(3) > h3 {
     color: aqua;
+    font-size: 30px;
+    height: 50px;
+    
 }
 div:nth-of-type(4) > h3 {
     color: blue;
+    font-family: 'Courier New', Courier, monospace;
 }
 div:nth-of-type(5) > h3 {
     color: blanchedalmond;
+ 
+}
+
+div:nth-last-child(odd) {
+    font-style: italic;
 }
