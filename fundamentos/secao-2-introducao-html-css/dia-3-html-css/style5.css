@@ -8,11 +8,17 @@ ol li:nth-last-of-type(even) {
 ol li:nth-last-of-type(add) {
     text-transform: uppercase;
 }
-h1, h2 {
+h1, h3{
     color: red;
 }
 
-h1 em, h2 em (
+h1 em, h3 em {
     font-size:40px;
-    border: 1px solid black;
-)
+    border: 1px solid black; 
+}
+ li {
+    fonte-size: 20px;
+ }
+li em {
+    font-weight: 700px;
+}
