@@ -1,41 +1,40 @@
 div:hover {
-    border: 3px solid rgb(128, 17, 118);
+    border: 3px solid black;
 }
 div:nth-of-type(1) {
-    background-color: rgb(236, 181, 236);
+    background-color: #9a8c98 ;
 }
 div:nth-of-type(2) {
-    background-color: rgb(231, 134, 240);
+    background-color: #A99985;
 }
 div:nth-of-type(3) {
-    background-color: rgb(233, 84, 188);
+    background-color: #70798C ;
 }
 div:nth-of-type(4) {
-    background-color: rgb(255, 0, 179);
+    background-color: #252323;
 }
 div:nth-of-type(5) {
-    background-color: rgb(223, 39, 146);
-    
+    background-color: papayawhip ;
 }
 div:nth-of-type(1) > h3 {
-    color: purple;
+    color: #6C757D ;
   
 }
 div:nth-of-type(2) > h3 {
-    color: blueviolet;
+    color: #CED4DA;
 }
 div:nth-of-type(3) > h3 {
-    color: aqua;
+    color: #DEE2E6;
     font-size: 30px;
     height: 50px;
     
 }
 div:nth-of-type(4) > h3 {
-    color: blue;
+    color: #F8F9FA;
     font-family: 'Courier New', Courier, monospace;
 }
 div:nth-of-type(5) > h3 {
-    color: blanchedalmond;
+    color: #212529;
  
 }
 
