@@ -17,3 +17,18 @@ div:nth-of-type(5) {
     background-color: rgb(223, 39, 146);
     
 }
+div:nth-of-type(1) > h3 {
+    color: purple;
+}
+div:nth-of-type(2) > h3 {
+    color: blueviolet;
+}
+div:nth-of-type(3) > h3 {
+    color: aqua;
+}
+div:nth-of-type(4) > h3 {
+    color: blue;
+}
+div:nth-of-type(5) > h3 {
+    color: blanchedalmond;
+}
