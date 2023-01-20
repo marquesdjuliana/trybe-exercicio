@@ -1,0 +1,1 @@
+Diretório reservado aos projetos desenvolvidos durante o curso da Trybe.
