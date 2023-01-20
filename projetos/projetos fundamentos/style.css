@@ -1,0 +1,34 @@
+body {
+    background-color: #495057;
+    font-family: "Roboto", sans-serif ;
+    color: black;
+    padding: 3%;
+  }
+
+  a {
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+  }
+
+  a:hover {
+    background-color: #495057;
+  }
+
+  a:active {
+    background-color: #DAD2BC;
+  }
+
+  h3, h2, h1 {
+    text-align: center;
+    color: black;
+    border: 1px solid #F8F9FA;
+    background-color: #F8F9FA;
+    border-radius: 100px;
+  }
+
+  article {
+    background-color: #ADB5BD;
+    border-radius: 20px;
+  }
+  
