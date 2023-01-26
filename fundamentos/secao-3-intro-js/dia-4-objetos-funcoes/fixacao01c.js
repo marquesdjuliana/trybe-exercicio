@@ -1,4 +1,4 @@
-// MOstra
+// Acessando a chave bestInTheWOrd:
 player = {
 
   name: 'Marta',
