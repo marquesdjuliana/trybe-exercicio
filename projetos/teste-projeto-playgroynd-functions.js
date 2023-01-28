@@ -1,5 +1,10 @@
 // 1- Crie uma função usando o operador &&
 
+const compareTrue = (a, b) => a && b ? true : false;
+const macaco = true;
+const elefante = true;
+console.log(compareTrue(macaco, elefante))
+
 // 2- Crie uma função que divida uma frase
 
 // 3- Crie uma função que use concatenação de strings
