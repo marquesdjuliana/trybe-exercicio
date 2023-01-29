@@ -77,54 +77,79 @@ const catAndMouse = (mouse, cat1, cat2) => {
 // 8- Crie uma função FizzBuzz
 const fizzBuzz = (a) => {
   let result = [];
-  for ( let index = 0; index < a.length; index += 1){
-    if ( a[index] % 3 === 0 && a[index] % 5 === 0 ) {
-      result.push('fizzBuzz');
-    } else if ( a[index] % 3 === 0 ) {
-      result.push('fizz');
-    } else if ( a[index] % 5 === 0) {
-      result.push('buzz');
+  for (let index = 0; index < a.length; index += 1) {
+    if (a[index] % 3 === 0 && a[index] % 5 === 0) {
+      result.push("fizzBuzz");
+    } else if (a[index] % 3 === 0) {
+      result.push("fizz");
+    } else if (a[index] % 5 === 0) {
+      result.push("buzz");
     } else {
-      result.push('bug!');
+      result.push("bug!");
+    }
+  }
+  return result;
+};
+console.log(fizzBuzz([2, 5, 20, 15, 2, 17]));
+
+// 9- Crie uma função que Codifique e Decodifique
+const encode = (trocaPorNum) => {
+  let result = "";
+
+  for (let index = 0; index < trocaPorNum.length; index += 1) {
+    if (trocaPorNum[index] === "a") {
+      result = result + "1";
+    } else if (trocaPorNum[index] === "e") {
+      result = result + "2";
+    } else if (trocaPorNum[index] === "i") {
+      result = result + "3";
+    } else if (trocaPorNum[index] === "o") {
+      result = result + "4";
+    } else if (trocaPorNum[index] === "u") {
+      result = result + "5";
+    } else {
+      result = result + trocaPorNum[index];
     }
   }
   return result;
 };
 
-// 9- Crie uma função que Codifique e Decodifique
+const decode = (trocaPorVog) => {
+  let result = "";
 
-const encode = (trocaPorNum) => {
-  let result = '';
-  for (let index = 0; index < trocaPorNum.length; index ) {
-    if (trocaPorNum[index] === 'a') {
-      result =  result + '1';
-    } else if ( trocaPorNum[index] === 'e') {
-      result = result + '2';
-    } else if ( trocaPorNum[index] === 'i') {
-      result = result + '3'; 
-    } else if ( trocaPorNum[index] === 'o') {
-      result = result + '4';
-    } else if ( trocaPorNum[index] === 'u') {
-      result = result + '5';
+  for (let index = 0; index < trocaPorVog.length; index += 1) {
+    if (trocaPorVog[index] === "1") {
+      result = result + "a";
+    } else if (trocaPorVog[index] === "2") {
+      result = result + "e";
+    } else if (trocaPorVog[index] === "3") {
+      result = result + "i";
+    } else if (trocaPorVog[index] === "4") {
+      result = result + "o";
+    } else if (trocaPorVog[index] === "5") {
+      result = result + "u";
     } else {
-      result = result + trocaPorNum[index];
+      result = result + trocaPorVog[index];
     }
-    }
-    return result;
-  };
-  
-  console.log(encode('hi there!'));
-
-
-
-{ 
-
-}
-
-
+  }
+  return result;
+};
 
 // 10- Crie uma função de Lista de Tecnologias
- const techList = (a, s) => {
+
+const techList = (arr, pessoa) => {
   let result = [];
-  
- }
+
+  if (arr && pessoa) {
+    for (let index = 0; index < arr.length; index += 1) {
+      let obj = {
+        tech: arr[index],
+        name: pessoa,
+      };
+      result.push(obj);
+    }
+  }
+
+  return result;
+};
+console.log(techList('Bebelu'));
