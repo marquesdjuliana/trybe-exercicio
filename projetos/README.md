@@ -1,1 +1,1 @@
-Diretório reservado aos projetos desenvolvidos durante o curso da Trybe.
+Diretório reservado aos exercises (que rodaram no repositorio de teste) e projetos  desenvolvidos durante o curso da Trybe.

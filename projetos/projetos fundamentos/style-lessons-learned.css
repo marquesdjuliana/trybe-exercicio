@@ -1,0 +1,76 @@
+body {
+  background-color: rgb(253, 251, 251);
+  margin-top: 150px;
+  margin-left: 20px;
+  font-family: Georgia, Times, serif;
+}
+
+#cabecalho {
+  background-color: green;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 130px;
+}
+
+#titulo {
+  color: white;
+  text-align: center;
+}
+
+.navpagina {
+  color: white;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+#minha_foto {
+  width: 150px;
+}
+
+#jm {
+  text-align: left;
+}
+
+#block {
+  display: flex;
+  flex-direction: column;
+}
+
+th {
+  text-align: left;
+  font-weight: 100;
+}
+
+#container-article {
+  font-size: medium;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 15px;
+}
+
+.lado-esquerdo {
+  text-align: justify;
+  border-width: medium;
+  border-style: dashed;
+  width: 500px;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+.lado-direito {
+  text-align: justify;
+  border-width: medium;
+  border-style: dashed;
+  width: 500px;
+  padding: 10px;
+  margin-left: 10px;
+}
+
+#blocks {
+  display: flex;
+}
