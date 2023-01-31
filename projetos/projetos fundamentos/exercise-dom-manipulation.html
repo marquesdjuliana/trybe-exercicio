@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício</title>
+
+    <style>
+      main,
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin: 0 auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 class="title">Desafio - JavaEscripito</h1>
+    </header>
+    <main class="main-content">
+      <section class="center-content">
+        <p>Texto padrão do nosso site</p>
+        <p>-----</p>
+        <p>Trybe</p>
+      </section>
+    </main>
+    <footer>
+      <p>Último parágrafo.</p>
+    </footer>
+    <script>
+      const changeP = () => {
+        const changePFuture = document.getElementsByTagName("p")[1];
+        changePFuture.innerHTML =
+          "Trabalhando como desevolvedora por um salário ju$$$to!";
+      };
+      changeP();
+
+      const changeColor = () => {
+        const changeYellow = document.getElementsByClassName("main-content")[0];
+        changeYellow.style.background = "rgb(76, 164, 109)";
+      };
+      changeColor();
+
+      const changeColorR = () => {
+        const changeRed = document.getElementsByClassName("center-content")[0];
+        changeRed.style.background = "white";
+      };
+      changeColorR();
+
+      const correctTitle = () => {
+        const changeTitle = document.getElementsByTagName("h1")[0];
+        changeTitle.innerHTML = "Desafio - JavaScript";
+      };
+      correctTitle();
+
+      const letter = () => {
+        const paragraph = document.getElementsByTagName("p")[0];
+        paragraph.innerHTML = paragraph.innerHTML.toUpperCase();
+      };
+      letter();
+    </script>
+  </body>
+</html>
