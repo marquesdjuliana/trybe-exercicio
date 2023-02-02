@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício</title>
+    <style>
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      //1
+      const tagH1 = document.createElement('h1');
+      tagH1.innerText = 'TrybeTrip - Agência de Viagens';
+      document.body.appendChild(tagH1);
+      console.log('tagH1');
+      
+      //2 
+      const tagMain = document.createElement('main');
+      tagMain.className = 'main-content';
+      document.body.appendChild(tagMain);
+      console.log('tagMain');
+
+      //3
+      const tagSection = document.createElement('section');
+      tagSection.className = 'center-content';
+      tagMain.appendChild(tagSection);
+      console.log('tagSection');
+
+      //4
+      const tagP = document.createElement('p');
+      tagP.innerHTML = 'Texto';
+      tagSection.appendChild(tagP);
+
+      //5
+      const tagSectionLeft = document.createElement('section');
+      tagSectionLeft.className = 'left-content';
+      tagMain.appendChild(tagSectionLeft);
+      console.log('tagSectionLeft');
+
+      //6
+      const tagSectionRigth = document.createElement('section');
+      tagSectionRigth.className = 'rigth-content';
+      tagMain.appendChild(tagSectionRigth);
+      console.log('tagSectionRigth');
+
+      //7
+      const elementImg = document.createElement('img');
+      elementImg.className = 'small-image';
+      elementImg.src = 'https://picsum.photos/200';
+      tagSectionLeft.appendChild(elementImg);
+      console.log('elementImg');
+
+      //8
+      const tagUl = document.createElement('ul');
+      tagSectionRigth.appendChild(tagUl);
+      const countingLIst = [ 'Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis',
+        'Sete', 'Oito', 'Nove', 'Dez'];
+        for (index = 0; index < countingLIst.length; index += 1) {
+          const tagLi = document.createElement('li');
+          tagLi.innerHTML = countingLIst[index];
+          tagUl.appendChild(tagLi);
+        };
+        console.log('tagUl');
+
+        //9
+        for (let index = 1; index <= 3; index += 1) {
+        const tagH3 = document.createElement('h3');
+        tagH3.innerHTML = 'Texto' + index;
+        tagMain.appendChild(tagH3);
+      };
+
+      //2.1
+      const title = document.querySelector('h1');
+      title.className = 'title';
+
+      //2.2
+      const tagH3 = document.getElementsByTagName('h3');
+      for (let index = 0; index < 3; index += 1) {
+        tagH3[index].className = 'description';
+      };
+
+      //2.3
+      const sectionLeft = document.getElementsByClassName('left-content')[0];
+      tagMain.removeChild(sectionLeft);
+
+      //2.4
+      const sectionRigth = document.getElementsByClassName('rigth-content')[0];
+      sectionRigth.style.marginRIgth = 'auto';
+
+      //2.4
+      const sectionCenterContent = document.getElementsByClassName('center-content')[0];
+      sectionCenterContent.parentNode.style.backgroundColor = 'green';
+
+      // 2.5
+      const ul = document.getElementsByTagName('ul')[0];
+      ul.lastChild.remove();
+      ul.lastChild.remove();
+    </script>
+  </body>
+</html>
