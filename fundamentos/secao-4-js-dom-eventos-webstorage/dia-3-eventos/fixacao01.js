@@ -5,7 +5,7 @@ const input = document.getElementById('input');
 const myWebpage = document.getElementById('my-spotrybefy');
 
 
-// - Copie esse arquivo e edite apenas ele;
+// - Copie esse arquivo e edite apenas ele
 //  - Note que uma das caixas está um pouco acima das outras. Por que isso ocorre?
 
 // - Crie uma função que adicione a classe 'tech' ao elemento `li` quando for clicado.
