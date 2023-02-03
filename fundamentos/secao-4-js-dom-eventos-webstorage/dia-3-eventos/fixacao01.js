@@ -5,22 +5,46 @@ const input = document.getElementById('input');
 const myWebpage = document.getElementById('my-spotrybefy');
 
 
-// - Copie esse arquivo e edite apenas ele
+// - Copie esse arquivo e edite apenas ele;
 //  - Note que uma das caixas está um pouco acima das outras. Por que isso ocorre?
+// R: Por conta da cdeclaração na .tech dentro do css transform: translateY(-20px);
 
 // - Crie uma função que adicione a classe 'tech' ao elemento `li` quando for clicado.
 //  - Deve existir apenas um elemento com a classe 'tech'. Como você faz isso?
+// solução do gabarito (entendendo como gerar a interação nas caixas):
+const addTech = (event) => {
+  const techElement = document.querySelector('.tech'); // salvando em uma variável o tech existente;
+  techElement.classList.remove('tech'); // removendo a tech do elemento que continha ela;
+  event.target.classList.add('tech'); // 
+  input.value = ''; // atribuindo uma string vazia para 'limpar' o input;
+}
 
+firstLi.addEventListener('click', addTech);
+secondLi.addEventListener('click', addTech);
+thirdLi.addEventListener('click', addTech);
 // - Crie uma função que, ao digitar na caixa de texto, altere o texto do elemento
 // com a classe 'tech';
+input.addEventListener('input', (event) => { // criando a função direto noncampo do parâmetro;
+  const techElement = document.querySelector('.tech');
+  techElement.innerText = event.target.value;
+});
 
 // - Crie uma função que, ao clicar duas vezes em 'Meu top 3 do Spotrybefy', ele
 // redirecione para alguma página;
 //  - Que tal redirecionar para seu portfólio?
 
+myWebpage.addEventListener('dblclick', () => {
+  window.location.replace('https://github.com/marquesdjuliana');
+});
 // - Crie uma função que, ao passar o mouse sobre 'Meu top 3 do Spotrybefy', altere
 // a cor do mesmo;
+myWebpage.addEventListener('mouseover', (event) => {
+  event.target.style.color = 'pink';
+});
 
+myWebpage.addEventListener('mouseout', (event) => {
+  event.target.style.color = 'unset';//redefine uma propriedade para seu valor herdado;
+});
 // Segue abaixo um exemplo do uso de event.target:
 
 
