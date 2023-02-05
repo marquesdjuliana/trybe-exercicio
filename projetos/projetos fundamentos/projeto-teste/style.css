@@ -16,15 +16,18 @@ body {
   background-color: black;
 }
 #color-2 {
-  background-color: orange;
+  background-color: #005f73;
 }
 #color-3 {
-  background-color: yellow;
+  background-color: #0a9396;
 }
 #color-4 {
-  background-color: green;
+  background-color: #94d2bd;
 }
 #button-random-color {
   cursor: pointer;
   margin-top: 10px;
+  border-radius: 10px;
+  background-color: white;
+  color: black;
 }
