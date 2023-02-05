@@ -1,6 +1,30 @@
 body {
-  background-color: #495057;
-  font-family: "Roboto", sans-serif ;
-  color: black;
-  padding: 3%;
+  padding-left: 10px;
+}
+.color {
+  width: 60px;
+  height: 60px;
+  border: 1px solid black;
+  margin-right: 10px;
+}
+
+#color-palette {
+  display: flex;
+}
+
+#color-1 {
+  background-color: black;
+}
+#color-2 {
+  background-color: orange;
+}
+#color-3 {
+  background-color: yellow;
+}
+#color-4 {
+  background-color: green;
+}
+#button-random-color {
+  cursor: pointer;
+  margin-top: 10px;
 }
