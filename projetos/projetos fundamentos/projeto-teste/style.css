@@ -1,6 +1,7 @@
 body {
   padding-left: 10px;
 }
+
 .color {
   width: 60px;
   height: 60px;
@@ -15,19 +16,39 @@ body {
 #color-1 {
   background-color: black;
 }
+
 #color-2 {
   background-color: #005f73;
 }
+
 #color-3 {
   background-color: #0a9396;
 }
+
 #color-4 {
   background-color: #94d2bd;
 }
+
 #button-random-color {
   cursor: pointer;
   margin-top: 10px;
   border-radius: 10px;
   background-color: white;
   color: black;
+}
+
+.line-pixel {
+  display: flex;
+}
+
+.pixel {
+  background-color: white;
+  /* Requisito 07: */
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+}
+
+#pixel-board {
+  margin-top: 10px;
 }
