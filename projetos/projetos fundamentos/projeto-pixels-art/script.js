@@ -107,5 +107,39 @@ document.getElementById("clear-board").addEventListener('click', clean = () =>{
   }
 });
 
+// const pixelSalvo = []; outra opção para pensar:
 
+// /* 10 - Crie uma função que permita preencher um pixel do quadro com a cor selecionada na paleta de cores. */
+// const selectedPixels = document.getElementsByClassName('pixel');
+// const clickChangeColor = () => {
+//   for (let i = 0; i < selectedPixels.length; i += 1) {
+//     selectedPixels[i].addEventListener('click', () => {
+//       const corParaPreencher = document.getElementsByClassName('color selected')[0];
+//       selectedPixels[i].style.backgroundColor = corParaPreencher.style.backgroundColor;
+//       pixelSalvo[i] = corParaPreencher.style.backgroundColor;
+//       localStorage.setItem('pixelBoard', JSON.stringify(pixelSalvo));
+//     });
+//   }
+// };
+// clickChangeColor();
+
+// /* 11 - Crie um botão que retorne a cor do quadro para a cor inicial. */
+// const botaoClear = document.getElementById('clear-board');
+// botaoClear.addEventListener('click', () => {
+//   for (let i = 0; i < selectedPixels.length; i += 1) {
+//     selectedPixels[i].style.backgroundColor = 'white';
+//     pixelSalvo[i] = 'white';
+//     localStorage.setItem('pixelBoard', JSON.stringify(pixelSalvo));
+//   }
+// });
+
+// /* 12 - Crie uma função para salvar e recuperar o seu desenho atual no localStorage */
+// const recoveredColor = JSON.parse(localStorage.getItem('pixelBoard'));
+// if (recoveredColor !== null) {
+//   for (let i = 0; i < recoveredColor.length; i += 1) {
+//     if (recoveredColor[i] !== null) {
+//       selectedPixels[i].style.backgroundColor = recoveredColor[i];
+//     }
+//   }
+// }
 };
