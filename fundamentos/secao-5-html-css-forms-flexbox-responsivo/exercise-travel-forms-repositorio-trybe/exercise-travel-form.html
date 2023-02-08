@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Form</title>
+</head>
+<body>
+  <label>
+  <h1 id="title">Formulário Trybe Travel</h1>
+</label>
+  <form id="main-form">
+    <label for="nome-completo">
+      <p>Nome Completo:</p>
+     <input class="elements" type="text" name="fullname" id="fullName" minlength="10" maxlength="40">
+    </label>
+    <label for="email">
+      <p>E-mail:</p>
+     <input class="elements" type="email" name="myemail" id="email" minlength="10" maxlength="50">
+    </label>
+ 
+    <label id="destinations">
+    <p>Destino Preferido:</p>
+
+    <input type="radio" id="destination1" className="radios" name="destinations" value="Cidade" required>Cidade
+
+    <input type="radio" id="destination2" className="radios" name="destinations" value="Campo" required>Campo
+
+   
+    <input type="radio" id="destination3" className="radios" name="destinations" value="Praia" required>Praia
+
+   
+    <input type="radio" id="destination4" className="radios" name="destinations" value="Montanhas" required>Montanhas
+  </label>
+
+ <section>
+  <label for="question">
+  <p>Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</p>
+  <textarea name="" id="question" cols="50" rows="10" maxlength="500" placeholder="Digite sua resposta" required></textarea>
+</label>
+<label for="date">
+  <p>Qual a melhor data para sua viagem?</p>
+  <input id="date">
+  <br>
+  <input  type="checkbox" id="promo" checked>Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?
+  <br>
+  <input type="checkbox" id="agreement">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.
+ </section>
+
+ <button type="submit" id="submit-btn">Enviar</button>
+ <button type="button" id="clear-btn">Limpar</button>
+
+    
+  </form>
+  <script src="./script.js"></script>
+</body>
+</html>
