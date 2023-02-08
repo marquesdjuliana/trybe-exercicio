@@ -1,5 +1,6 @@
 window.onload = () => {
   // Requisito 04: a) gerando cores aleatórias:
+  // Referência: trecho de código de cores aleatórias retirado de Luiz Henrique, @Zigzag "https://www.youtube.com/watch?v=E5qWEY1GVQ0":
   const changeColorBtn = () => {
     const chars = '0123456789ABCDF'
     let color = '#'
@@ -18,7 +19,6 @@ window.onload = () => {
       color3: '',
       color4: '',
     };
-
     for (let index = 1; index < 4; index += 1) {
       let color = changeColorBtn();
       let colorDiv = document.getElementById(`color-${index + 1}`)
@@ -66,8 +66,46 @@ const boardPixels = () => {
 
 boardPixels();
 
-// Requisito 08: atribuindo selected:
-  let color1 = document.getElementById('color-1');
-   color1.classList.add('selected');
-   
+// Requisito 08: atribuindo selected color1:
+const color1 = document.getElementById('color-1');
+color1.className += "selected";
+
+
+// // Requisito 09: alternando selected
+
+const alternatingSelected = (event) => {
+  const getSelect = document.getElementsByClassName('selected')[0];
+  getSelect.classList.remove('selected');
+  event.target.className += " selected";
+  // console.log(event.target)
+ } 
+ 
+color1.addEventListener('click', alternatingSelected); 
+
+const color2 = document.getElementById('color-2');
+color2.addEventListener('click', alternatingSelected); 
+
+const color3 = document.getElementById('color-3');
+color3.addEventListener('click', alternatingSelected); 
+
+const color4 = document.getElementById('color-4');
+color4.addEventListener('click', alternatingSelected); 
+
+// Requisito 10: 
+
+for ( let index = 0; index < document.getElementsByClassName('pixel').length; index += 1) {
+  document.getElementsByClassName('pixel')[index].addEventListener('click',  assignColors = () =>{
+    console.log(document.querySelector('.selected').style.backgroundColor);
+    document.getElementsByClassName('pixel')[index].style.backgroundColor = document.getElementsByClassName('selected')[0].style.backgroundColor;
+  })
 }
+// Requisito 11: retornando cor branca:
+document.getElementById("clear-board").addEventListener('click', clean = () =>{
+  for ( let index = 0; index < 25; index += 1) {
+    const pixelSquare = document.getElementsByClassName('pixel')[index];
+    pixelSquare.style.backgroundColor = 'white';
+  }
+});
+
+
+};

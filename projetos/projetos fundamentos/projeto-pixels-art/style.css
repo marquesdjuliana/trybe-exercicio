@@ -13,23 +13,7 @@ body {
   display: flex;
 }
 
-#color-1 {
-  background-color: black;
-}
-
-#color-2 {
-  background-color: #005f73;
-}
-
-#color-3 {
-  background-color: #0a9396;
-}
-
-#color-4 {
-  background-color: #94d2bd;
-}
-
-#button-random-color {
+#button-random-color #clear-board {
   cursor: pointer;
   margin-top: 10px;
   border-radius: 10px;
@@ -43,7 +27,6 @@ body {
 
 .pixel {
   background-color: white;
-  /* Requisito 07: */
   width: 40px;
   height: 40px;
   border: 1px solid black;
@@ -52,3 +35,4 @@ body {
 #pixel-board {
   margin-top: 10px;
 }
+
