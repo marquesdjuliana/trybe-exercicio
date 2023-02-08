@@ -122,7 +122,7 @@ window.onload = () => {
     }
   }
 };
-
+// Para lembrar: esses requisitos soltos impediram de realizar o requisito 12:
 // // Requisito 10: 
 
 // for ( let index = 0; index < document.getElementsByClassName('pixel').length; index += 1) {
