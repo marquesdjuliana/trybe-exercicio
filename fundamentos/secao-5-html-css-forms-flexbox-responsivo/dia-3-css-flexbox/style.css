@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Ubuntu, Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: black;
+}
+
+.header-container {
+  align-items: center;
+  background-color: rgb(94, 25, 45);
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.header-img {
+  width: 100px;
+}
+
+h1 {
+  color: rgb(238, 238, 238);
+  font-size: 1.3rem;
+}
+
+h3 {
+  color: rgb(194, 194, 194);
+  font-size: 1rem;
+  text-decoration: underline;
+}
+
+h3:hover {
+  color: rgb(156, 72, 100);
+
+}
+
+h4 {
+  color: rgb(194, 194, 194);
+  font-size: 1rem;
+}
+
+.text-section {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+}
+
+p {
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+  width: 90%;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 10px auto 13px;
+  width: 50%;
+}
+
+.gallery-card {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 220px;
+  justify-content: center;
+  margin: 0 10px 15px 0;
+  width: 180px;
+}
+
+.gallery-img {
+  width: 150px;
+}
+
+.footer-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.social-instagram {
+  width: 25px;
+  margin-left: 10px;
+}
+
+.social-linkedin {
+  width: 25px;
+  margin-left: 10px;
+}
