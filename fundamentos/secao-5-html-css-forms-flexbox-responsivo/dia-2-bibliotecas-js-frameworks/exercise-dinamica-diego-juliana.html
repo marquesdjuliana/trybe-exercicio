@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="style-dinamica-diego-juliana.css">
+  <title>Hotel Trybe</title>
+</head>
+
+<body>
+  <header class="header-trybe">
+    <h1>Trybe Hotel</h1>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3q0v72AJA-p9V_oPst_65uEG9dr1WxKN-ZYp_5gE&s">
+  </header>
+  <form>
+    <section class="hotel-form" for="checkin">
+      <label class="form-label">
+      Check-in
+      <input type="date" class="form-control" class="inputCheckin" id="checkin">
+    </label>
+    <br>
+    <label class="form-label" for="checkout">
+      Check-out
+      <input type="date" class="form-control" class="inputCheckout" id="checkout">
+    </label>
+    </section>
+    <!-- A partir daqui (requisito 3, continuação) realizei-->
+    <section class="hotel-form">
+      <p>Acomodação</p>
+      <input type="radio" name="acomodacao" class="bedroom">Comum
+      <input type="radio" name="acomodacao"  class="bedroom">Club
+      <input type="radio" name="acomodacao"  class="bedroom">Luxo
+    </section>
+    <section class="hotel-form">
+      <label for="select">Número de Hóspedes</label>
+      <select name="select" class="form-control" class="form-select">
+        <option value="1" class="nPessoas">1 Pessoa</option>
+        <option value="3" class="nPessoas">2 Pessoas</option>
+        <option value="3" class="nPessoas">3 Pessoas</option>
+        <option value="4" class="nPessoas">4 Pessoas</option>
+      </select>
+    </section>
+    <br>
+    <section class="hotel-form" class="sectionSize">
+      <textarea class="form-control" placeholder="Observações" class="obs"></textarea>
+  </section>
+  <section>
+    <button type="submit" class="btn btn-success">Reservar</button>
+  </section>
+  </form>
+</body>
+
+</html>
