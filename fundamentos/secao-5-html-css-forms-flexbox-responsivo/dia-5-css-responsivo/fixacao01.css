@@ -81,9 +81,10 @@ p strong {
 }
 
 /* Não entendi isso: a terceira div não deverá aparecer se nossa tela possuir largura 650px e 950px */
+
 @media (max-width: 650px) {
   .card:nth-of-type(3) {
-    display: block;
+    display: flex;
   }
 }
 
@@ -93,9 +94,11 @@ p strong {
   }
 }
 
+
 /* Sem alterar a classe trick, faça com que o texto dela apareça somente quando a tela estiver com menos de 500px de largura. */
 @media (max-width: 500px) {
   p.trick {
     color: black;
   }
 }
+ 
