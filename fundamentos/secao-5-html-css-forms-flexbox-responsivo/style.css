@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu';
+}
+
+body {
+  background-color: rgb(247, 247, 247);
+}
+
+.header-container {
+  background-color: #5C687C;
+  display: flex;
+}
+/* Adicione uma propriedade que defina o tamanho Flexbox base para o container da imagem 268px e para o container do menu 500px. Após aplicar as propriedades, o header deverá estar similar à imagem abaixo: */
+.logo-container {
+  display: flex;
+  justify-content: center;
+  flex-basis: 268px;
+  /* Adicione uma propriedade Flexbox que modifique a ordem em que o logo e os itens do menu aparecem na tela. Após aplicar a propriedade, o header deverá estar similar à imagem abaixo: */
+  order: -1; 
+}
+
+.menu-container {
+  display: flex;
+  flex-basis: 500px;
+  /* Adicione uma propriedade Flexbox que faça o container do menu crescer, quando houver espaço disponível. Após aplicar a propriedade, o header deverá estar similar à imagem abaixo: */
+  flex-grow: 1;
+  /* Utilize a propriedade align-self no elemento correto para que o header da página tenha o seguinte comportamento: */
+  align-self: center ;
+}
+
+.menu-container ul {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.menu-container li {
+  color: white;
+  font-weight: 500;
+  font-size: 1.3rem;
+  list-style: none;
+  margin-right: 10px;
+}
+
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.movie-container {
+  display: flex;
+  flex-basis: 700px;
+  flex-direction: column;
+  flex-grow: 10;
+}
+
+.movie-container h2 {
+  margin: 40px 0;
+  text-align: center;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card-container div {
+  align-items: center;
+  background-color: #5C687C;
+  border: black solid 1px;
+  display: flex;
+  flex-basis: 16%;
+  flex-grow: 1;
+  height: 150px;
+  justify-content: center;
+  margin: 10px;
+}
+
+.aside-container {
+  align-self: center;
+  display: flex;
+  flex-basis: 350px;
+  flex-direction: column;
+  flex-grow: 1;
+  margin: 20px;
+}
+
+.aside-container h3, h4 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.aside-container p {
+  margin: 10px 0;
+  text-align: justify;
+}
