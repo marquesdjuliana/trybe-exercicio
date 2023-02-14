@@ -1,0 +1,62 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+/* Utilizando a abordagem mobile first e media queries, crie três versões de layout diferentes para essa página. Cada layout deve corresponder a um tamanho diferente de página (pequeno, médio e grande).*/
+.container {
+  display: flex;
+}
+
+p {
+  padding: 20px;
+}
+
+
+/* Aqui está o primeiro breakpoint: pequeno (até 600px)*/
+
+@media screen and (max-width: 600px) {
+  body {
+    color: white;
+    background-color: black;
+    font-family: sans-serif;
+  }
+  .container {
+    flex-direction: column;
+  }
+
+  p {
+    padding: 0 5px;
+    line-height: 1.5em;
+  }
+
+}
+
+/* Aqui está o segundo breakpoint: médio (a partir de 6000px) */
+
+@media screen and (min-width: 600px) {
+  body {
+    background-color: pink;
+  }
+
+  .container {
+    flex-wrap: wrap;
+  }
+
+
+}
+
+/* Aqui está o terceiro breakpoint: grande (1000px)*/
+
+@media screen and (min-width: 1000px) {
+  body {
+    background-color: lightblue;
+  }
+
+  .container {
+    flex-wrap: nowrap;
+  }
+
+}
