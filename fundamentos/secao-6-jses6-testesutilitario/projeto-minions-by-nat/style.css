@@ -98,11 +98,3 @@ footer {
 #form-data li {
   margin-bottom: 1rem;
 }
-/* Requisito 19: estilizando footer */
-footer {
-  text-align: center;
-  background-color: grey;
-  color: white;
-  padding: 0.5rem;
-  font-weight: 700;
-}
