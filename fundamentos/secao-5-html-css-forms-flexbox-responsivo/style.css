@@ -55,3 +55,12 @@ main {
   gap: 3px;
   padding: 5px;
 }
+
+/* Requisito 19: estilizando footer */
+footer {
+  text-align: center;
+  background-color: grey;
+  color: white;
+  padding: 0.5rem;
+  font-weight: 700;
+}
