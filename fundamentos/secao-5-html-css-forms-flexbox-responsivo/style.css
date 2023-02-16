@@ -56,6 +56,11 @@ main {
   padding: 5px;
 }
 
+/* Requisito 13: estilizando */
+#label-content {
+  padding: 10px;
+}
+
 /* Requisito 19: estilizando footer */
 footer {
   text-align: center;
