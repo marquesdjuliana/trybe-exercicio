@@ -36,7 +36,7 @@ window.onload = () => {
 }
 
 // Sétimo passo: Exiba uma mensagem com o resultado da soma e faça a função displayResult exibir os resultados na tela e limpar os inputs.
-// Exiba uma mensagem com o resultado no elemento com o id = result;
+// Exiba uma mensagem com o resultado no elemento com o id = result.
 
 function displayResult(result) {
   document.getElementById('result').innerHTML = `Resultado: ${result}`;
