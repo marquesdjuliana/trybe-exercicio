@@ -1,4 +1,4 @@
-// myRemove.test.js
+// myRemove:
 const myRemove = require('./srcipt01');
 
 describe('Requisito 1: função myRemove', () => {
