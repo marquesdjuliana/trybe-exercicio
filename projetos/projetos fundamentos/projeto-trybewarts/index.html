@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Requisito 01, 02 e 04: criando elementos em header -->
+    <header class="header">
+        <img id="logoT" class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="Logo Trybewarts">
+        <h1 id="trybewarts-header-title">Trybewarts</h1>
+      <form class="trybewarts-login">
+       <input type="email" name="email" id="email" class="form-control" placeholder="Email">
+       <input type="password" name="password" id="senha" class="form-control" placeholder="Senha">
+        <button type="submit" class="form-control" id="entrar">Entrar</button>
+      </form>
+    </header>
+    <!-- Requisito 05 e 06: main/form -->
+    <main>
+        <h1>Formulário de Avaliação</h1>
+        <form id="evaluation-form">
+    <!-- Requisito 08: nome/sobrenome/email -->
+    <!-- Requisito 10 e 11: criando divs class form-row -->
+        <div class="form-row">
+</body>
+          <input type="text" id="input-name" class="form-control" placeholder="Nome">
+          <input type="text" id="input-lastname" class="form-control" placeholder="Sobrenome">
+        </div>
+        <div class="form-row">
+          <input type="email"id="input-email" class="form-control" placeholder="Email">
+        </form>
+    <!-- Requisito 09 -->
+    <section>
+        <label for="house">Casa:
+          <select id="house">
+            <option id="gitnoria-house">Gitnória</option>
+            <option id="reactpuff-house">Reactpuff</option>
+            <option id="corvinode-house">Corvinode</option>
+            <option id="pytherina-house">Pytherina</option>
+          </select>
+        </label>
+    </section>
+    </div>
+    
+    <!-- Requisito 13: criando checkbox -->
+    <div id="label-content">
+      <label for="" >Qual conteúdo você está com mais vontade de aprender?</label>
+       HoFs<input type="checkbox" name="checkContent" id="evil-rate1" class="subject" value="HoFs">
+       Jest<input type="checkbox" name="checkContent" id="evil-rate2" class="subject"  value="Jest">
+       Promises<input type="checkbox" name="checkContent" id="evil-rate3" class="subject"  value="Promises">
+       React<input type="checkbox" name="checkContent" id="evil-rate4" class="subject"  value="React">
+       SQL<input type="checkbox" name="checkContent" id="evil-rate5" class="subject"  value="SQL">
+       Python<input type="checkbox" name="checkContent" id="evil-rate6" class="subject"  value="Python">
+    </div>
+
+    <!-- Requisito 15: crieando textarea -->
+    <div class="form-row">
+        <label class="textarea">Deixe seu comentário:
+          <textarea id="sobre" class="form-control" maxlength="500"></textarea>
+        </label>
+      </div>
+    </main>
+    <!-- Requisito 19: criando footer -->
+    <footer>Direitos reservados à Trybewarts©.</footer>
+    <script src="script.js"></script>
+</body>
+</html>

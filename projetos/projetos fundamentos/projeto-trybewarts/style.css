@@ -1,0 +1,71 @@
+body {
+  font-family: Georgia, Times, serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+/* Requisitos 01 a 4: estilização do header */
+.header {
+  display: flex;
+  background-color: rgb(50, 167, 145);
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+}
+
+.trybewarts-login {
+  display: flex;
+  justify-content: flex-end;
+  width: 30%;
+  gap: 3px;
+}
+
+#logoT {
+  width: 40px;
+}
+
+#entrar {
+  width: 30%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Requisito 05 e 06: estilização da main */
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+#evaluation-form {
+  display: flex;
+  flex-direction: column;
+  width: 675px;
+}
+
+/* Requisito 10: Nome e sobrenome */
+.form-row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 3px;
+  padding: 5px;
+}
+
+/* Requisito 13: estilizando */
+#label-content {
+  padding: 10px;
+}
+
+/* Requisito 19: estilizando footer */
+footer {
+  text-align: center;
+  background-color: grey;
+  color: white;
+  padding: 0.5rem;
+  font-weight: 700;
+}

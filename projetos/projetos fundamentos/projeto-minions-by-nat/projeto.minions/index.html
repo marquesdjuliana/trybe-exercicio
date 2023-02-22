@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>VillainMinions</title>
+</head>
+
+<body>
+  <header>
+    <div class="column">
+      <img src="images/logo.png">
+      <h1>VillainMinions</h1>
+    </div>
+
+    <form class="column form">
+      <input type="email" placeholder="E-mail">
+      <input type="password" placeholder="Senha">
+      <button type="submit">Acessar</button>
+    </form>
+  </header>
+
+  <main id="form-page">
+    <form class="main-column" id="form-inscricao">
+      <div class="form-row">
+        <label for="">Nome<input type="text" id="nome"></label>
+        <label for="">Sobrenome<input type="text" id="lastname"></label>
+      </div>
+
+      <div class="form-row">
+        <label for="">Email<input type="email" id="email"></label>
+      </div>
+
+      <div class="form-row">
+        <label for="">Qual seu filme favorito?
+          <select id="movie">
+            <option>Minions</option>
+            <option>Meu malvado Favorito1</option>
+            <option>Meu malvado Favorito2</option>
+            <option>Meu malvado Favorito3</option>
+          </select>
+        </label>
+      </div>
+
+      <div id="radios">
+        <label for="">De 1 a 10 o quão malvado você se considera?
+          <label for="">1<input type="radio" name="evil-rate" id="evil-rate1" value="1"></label>
+          <label for="">2<input type="radio" name="evil-rate" id="evil-rate2" value="2"></label>
+          <label for="">3<input type="radio" name="evil-rate" id="evil-rate3" value="3"></label>
+          <label for="">4<input type="radio" name="evil-rate" id="evil-rate4" value="4"></label>
+          <label for="">5<input type="radio" name="evil-rate" id="evil-rate5" value="5"></label>
+          <label for="">6<input type="radio" name="evil-rate" id="evil-rate6" value="6"></label>
+          <label for="">7<input type="radio" name="evil-rate" id="evil-rate7" value="7"></label>
+          <label for="">8<input type="radio" name="evil-rate" id="evil-rate8" value="8"></label>
+          <label for="">9<input type="radio" name="evil-rate" id="evil-rate9" value="9"></label>
+          <label for="">10<input type="radio" name="evil-rate" id="evil-rate10" value="10"></label>
+        </label>
+      </div>
+      <div class="form-row">
+        <label id="about">Conte-nos mais sobre você
+          <textarea id="sobre"></textarea>
+        </label>
+      </div>
+      <button type="submit" id="button-enviar">Enviar</button>
+    </form>
+    <div class="main-column">
+      <img src="images/minions-1.jpg">
+    </div>
+  </main>
+
+  <main class="hidden">
+    <div class="main-column">
+      <h2 id="feedback">Obrigado por ter se inscrito</h2>
+      <ul id="form-data"></ul>
+    </div>
+  </main>
+  <footer>VillainMinnions</footer>
+  <script src="./main.js"></script>
+</body>
+
+</html>
