@@ -1,5 +1,5 @@
 // myRemove.test.js
-const myRemove = require('./myRemove.js');
+const myRemove = require('./srcipt01');
 
 describe('testa a função myRemove', () => {
   it('deve retornar um array removendo o item correto', () => {
