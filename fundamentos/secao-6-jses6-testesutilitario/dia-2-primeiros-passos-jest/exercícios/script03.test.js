@@ -1,4 +1,4 @@
-// encodeDecode.test.js
+
 const { encode, decode } = require('./script03');
 describe('Testa as funções encode e decode', () => {
   it('a função encode é definida', () => {

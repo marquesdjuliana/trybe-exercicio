@@ -1,4 +1,4 @@
-// encodeDecode.js
+
 const mapString = (objectMap, string) => {
   const splitString = string.split('');
   const mappedArray = [];
