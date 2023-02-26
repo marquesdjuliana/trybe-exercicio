@@ -1,5 +1,5 @@
-
-const { encode, decode } = require('./script03');
+// encodeDecode.test.js
+const { encode, decode } = require('./encodeDecode.js');
 describe('Testa as funções encode e decode', () => {
   it('a função encode é definida', () => {
     expect(encode).toBeDefined();

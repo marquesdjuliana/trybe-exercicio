@@ -1,5 +1,5 @@
 // myRemove:
-const myRemove = require('./srcipt01');
+const myRemove = require('./script01');
 
 describe('Requisito 1: função myRemove', () => {
   it('deve retornar um array removendo o item correto', () => {
