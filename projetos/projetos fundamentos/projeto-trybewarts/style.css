@@ -27,7 +27,10 @@ h1 {
 }
 
 #entrar {
-  width: 30%;
+  width: 20%;
+  color: white;
+  background-color: purple;
+
 }
 
 * {
@@ -38,7 +41,8 @@ h1 {
 /* Requisito 05 e 06: estilização da main */
 main {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;
 }
 
 #evaluation-form {
@@ -56,16 +60,57 @@ main {
   padding: 5px;
 }
 
-/* Requisito 13: estilizando */
+/* Requisito 12 e 13: estilizando */
+#modulos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: auto;
+}
+
+/* Requisito 14: estilizando */
+#avaliacao {
+  display: flex;
+  justify-content: space-evenly;
+}
+
 #label-content {
   padding: 10px;
+  display: flex;
 }
+
+#trybewarts-forms-logo {
+  flex-direction: row;
+  height: 500px;
+}
+
+#concorda {
+  display: flex;
+  justify-content: space-between;
+}
+
+#submit-btn {
+  background-color: purple;
+  color: whitesmoke;
+  width: 10%;
+  font-size: 15px;
+}
+
 
 /* Requisito 19: estilizando footer */
 footer {
   text-align: center;
-  background-color: grey;
   color: white;
+  background-color: grey;
   padding: 0.5rem;
-  font-weight: 700;
+  margin-top: 7%;
+}
+
+/* Requisito 21 */
+.hidden {
+  display: none;
+}
+
+#form-data li {
+  margin-bottom: 1rem;
 }

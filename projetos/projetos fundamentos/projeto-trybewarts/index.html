@@ -9,7 +9,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body >
     <!-- Requisito 01, 02 e 04: criando elementos em header -->
     <header class="header">
         <img id="logoT" class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="Logo Trybewarts">
@@ -22,8 +22,8 @@
     </header>
     <!-- Requisito 05 e 06: main/form -->
     <main>
-        <h1>Formulário de Avaliação</h1>
         <form id="evaluation-form">
+            <p><h1>Formulário de Avaliação</h1></p>
     <!-- Requisito 08: nome/sobrenome/email -->
     <!-- Requisito 10 e 11: criando divs class form-row -->
         <div class="form-row">
@@ -33,10 +33,10 @@
         </div>
         <div class="form-row">
           <input type="email"id="input-email" class="form-control" placeholder="Email">
-        </form>
-    <!-- Requisito 09 -->
+        
+    <!-- Requisito 09: criando select house -->
     <section>
-        <label for="house">Casa:
+        <label for="house" >Casa:
           <select id="house">
             <option id="gitnoria-house">Gitnória</option>
             <option id="reactpuff-house">Reactpuff</option>
@@ -46,23 +46,67 @@
         </label>
     </section>
     </div>
-    
-    <!-- Requisito 13: criando checkbox -->
-    <div id="label-content">
-      <label for="" >Qual conteúdo você está com mais vontade de aprender?</label>
-       HoFs<input type="checkbox" name="checkContent" id="evil-rate1" class="subject" value="HoFs">
-       Jest<input type="checkbox" name="checkContent" id="evil-rate2" class="subject"  value="Jest">
-       Promises<input type="checkbox" name="checkContent" id="evil-rate3" class="subject"  value="Promises">
-       React<input type="checkbox" name="checkContent" id="evil-rate4" class="subject"  value="React">
-       SQL<input type="checkbox" name="checkContent" id="evil-rate5" class="subject"  value="SQL">
-       Python<input type="checkbox" name="checkContent" id="evil-rate6" class="subject"  value="Python">
+
+    <!-- Requisito 12 e 13: criando checkbox -->
+<div id="modulos">
+     <div>
+            <label id="label-family">Qual sua família?</label><br>
+            <input type="radio" name="family" value="Frontend"><label for="family"> Frontend </label><br>
+            <input type="radio" name="family" value="Backend"><label for="family"> Backend </label><br>
+            <input type="radio" name="family" value="FullStack"><label for="family"> FullStack </label><br>
+     </div>
+          <br>
+     <div>
+      <label for="" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
+      <label for="hofs"><input type="checkbox" value="HoFs" name="matter" id="hofs" class="subject">HoFs</label>
+      <label for="jest"><input type="checkbox" value="Jest" name="matter" id="jest" class="subject">Jest</label>
+      <label for="promises"><input type="checkbox" value="Promises" name="matter" id="promises" class="subject">Promises</label>
+      <label for="react"><input type="checkbox" value="React" name="matter" id="react" class="subject">React</label>
+      <label for="sql"><input type="checkbox" value="SQL" name="matter" class="subject" id="sql">SQL</label>
+      <label for="python"><input type="checkbox" value="Python" name="matter" id="python" class="subject">Python</label>
     </div>
 
-    <!-- Requisito 15: crieando textarea -->
+</div>
+
+ <!-- Requisito 14 - Avaliação Trybewarts -->
+<label id="label-rate">Como você avalia a Trybewarts?</label>
+<div id="avaliacao">
+  <input type="radio" name="rate" value="1">1
+  <input type="radio" name="rate" value="2">2
+  <input type="radio" name="rate" value="3">3
+  <input type="radio" name="rate" value="4">4
+  <input type="radio" name="rate" value="5">5
+  <input type="radio" name="rate" value="6">6
+  <input type="radio" name="rate" value="7">7
+  <input type="radio" name="rate" value="8">8
+  <input type="radio" name="rate" value="9">9
+  <input type="radio" name="rate" value="10">10
+</div>
+
+    <!-- Requisito 15: criando textarea -->
     <div class="form-row">
         <label class="textarea">Deixe seu comentário:
-          <textarea id="sobre" class="form-control" maxlength="500"></textarea>
+          <textarea id="textarea" class="form-control" maxlength="500"></textarea>
+          <p id="counter">500</p>
         </label>
+    </div>
+
+    <!-- Requisito 16 - validar informações pela pessoa usuária  -->
+    <div id="concorda">
+      <label for="agreement" id="label-infos"><input type="checkbox" id="agreement" >Você concorda com o uso das informações acima?</label>
+     <!-- Requisito 17/18 - button enviar--> 
+      <button type="submit" id="submit-btn" class="form-control" disabled>Enviar</button>
+    </div>
+    </form>
+    <!-- Requisito 07 - logo Trybewarts -->
+    <img src="images/trybewarts-colored.svg" id="trybewarts-forms-logo" alt="Logo - Trybewarts">
+
+    </main>
+    <!-- Requisito 21: -->
+    <main class="hidden">
+      <div class="main-column">
+        <h2 id="feedback">Obrigado(a) pelas informações!</h2>
+        <ul id="form-data"></ul>
       </div>
     </main>
     <!-- Requisito 19: criando footer -->
