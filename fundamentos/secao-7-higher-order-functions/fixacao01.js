@@ -42,3 +42,33 @@ const musicas = [
 
 const findId = musicas.find((idQueQuero) => idQueQuero.id === '31031685' ); // dica:  é necessário acessar a propriedade a ser verificada.
 console.log(findId);
+
+// 06: Usando .some
+// Caso a pessoa esteja na lista de convidados, o retorno da função hasName deve ser true. Caso contrário, deve ser false.
+const listGuests = ['Mateus', 'José', 'Ana', 'Cláudia', 'Bruna'];
+
+const hasName = (arr, name) => {
+  return arr.some((nomeNaLIsta) => nomeNaLIsta === name); // dois parametros: array e o nome que quero receber
+};
+
+console.log(hasName(listGuests, 'Ana')); // true, pois Ana está na lista de convidados.
+console.log(hasName(listGuests, 'Pedro')); // false, pois Pedro não está na lista de convidados.
+
+// 07: Usando .some
+// Crie uma função que verifica se todas as pessoas do array people possuem a idade mínima especificada;
+// Retorne true se todas tiverem a idade maior ou igual à mínima e, caso contrário, false.
+
+const people = [
+  { name: 'Mateus', age: 18 },
+  { name: 'José', age: 16 },
+  { name: 'Ana', age: 23 },
+  { name: 'Cláudia', age: 20 },
+  { name: 'Bruna', age: 19 },
+];
+
+const verifyAges = (arr, idadeMinima) => {
+  return arr.every((pessoa) => pessoa.age >= idadeMinima);
+};
+
+console.log(verifyAges(people, 18)); // false
+console.log(verifyAges(people, 14)); // true
