@@ -1,3 +1,4 @@
+// // // Parte I: 
 // Exercício O1: organizar o sistema de contratação de uma empresa e deve criar uma estrutura de dados que possua o formato { nomeCompleto, email } para representar a nova pessoa contratada;
 //crie uma função que receba como parâmetro o nome completo da nova pessoa colaboradora e que automaticamente gere um email no formato nome_da_pessoa@trybe.com;
 
@@ -30,8 +31,7 @@ const resultadoLoteria = (meuNumero, callback) => {
 
 console.log(resultadoLoteria(2, confereNumero));
 
-//Exercício 03: Corretor automático de exame:
-
+// // Exercício 03: Corretor automático de exame:
 
 // const respostasCertas = ['A', 'C', 'B', 'D', 'A', 'A', 'D', 'A', 'D', 'C'];
 // const respostasAluno = ['A', 'N.A', 'B', 'D', 'A', 'C', 'N.A', 'A', 'D', 'B'];
