@@ -31,14 +31,22 @@ const personagens = [
 // Encontre o personagem que utiliza a habilidade Teleportar
 // Saida Esperada: Mago
 
+// const habilidadeTelepor = personagens.find((personagem) => {
+//   return personagem.habilidades.find((teleportar) => teleportar === 'Teleportar')}).classe;
+// console.log(habilidadeTelepor);
+
+
 
 // Verifique se todas as classes tem 3 habilidades
 //Saida Esperada: true
 
-
+// const confereHabilidades = personagens.every((personagem) =>  personagem.habilidades.length === 3);
+// console.log(confereHabilidades);
 // Verifique se pelo menos uma classe tem o hp maior que 150 e retorne um valor booleano.
 // Saida Esperada: false
 
+const verifyHp = personagens.some((personagem) =>  personagem.status.hp > 150)
+console.log(verifyHp);
 
 // Crie uma função que liste todas as habilidades do Arqueiro
 // Saida Esperada: ['Desviar', 'Precisão', 'Tiro Flamejante']
