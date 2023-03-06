@@ -8,15 +8,15 @@ const somar = (acc, curr) => acc + curr;
 const somarPares = (array) => array.filter(numerosPares).reduce(somar);
 console.log(somarPares(numbers));
 // Usando apenas recude:
-// const numbers = [18, 19, 23, 53, 4, 5, 76, 23, 54];
+const numbers = [18, 19, 23, 53, 4, 5, 76, 23, 54];
 
-// const sum = (accumulator, number) => (
-//   (number % 2 === 0) ? accumulator + number : accumulator
-// );
+const sum = (accumulator, number) => (
+  (number % 2 === 0) ? accumulator + number : accumulator
+);
 
-// const sumNumbers = (array) => array.reduce(sum, 0);
+const sumNumbers = (array) => array.reduce(sum, 0);
 
-// console.log(sumNumbers(numbers)); 
+console.log(sumNumbers(numbers)); 
 
 
 // exercício fixação 02:
@@ -102,44 +102,3 @@ return {
 }});
 console.log(relatorio);
 
-// Mentoria
-// Crie uma função que liste todas as habilidades do Arqueiro
-// Saida Esperada: ['Desviar', 'Precisão', 'Tiro Flamejante']
-const personagens = [
-  {
-    classe: 'Guerreiro',
-    status: {
-      hp: 150,
-      atk: 10,
-      def: 30,
-    },
-    habilidades: ['Pular', 'Bloquear', 'Ataque Rapido'],
-  },
-  {
-    classe: 'Arqueiro',
-    status: {
-      hp: 100,
-      atk: 20,
-      def: 15,
-    },
-    habilidades: ['Desviar', 'Precisão', 'Tiro Flamejante'],
-  },
-  {
-    classe: 'Mago',
-    status: {
-      hp: 85,
-      atk: 40,
-      def: 10,
-    },
-    habilidades: ['Teleportar', 'Bola de Fogo', 'Nevasca'],
-  },
-];
-
-const habilidadesArqueiro = () => {
-  const arqueiroHabilidade = personagens.find(
-    (classeQueProcuro) => classeQueProcuro.classe === 'Arqueiro',
-  );
-  return arqueiroHabilidade.habilidades;
-};
-
-console.log(habilidadesArqueiro());
