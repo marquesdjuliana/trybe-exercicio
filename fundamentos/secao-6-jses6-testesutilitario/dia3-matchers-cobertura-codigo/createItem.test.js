@@ -28,6 +28,6 @@ describe('a função createItem', () => {
 
   it('Lança um erro se o preço é zero', () => {
     expect(() => createItem('banana', 'kg', 0.00))
-      .toThrow('O preço do item deve ser maior que zero');
+      .toThrow('o preço do item deve ser maior que zero');
   });
 });
