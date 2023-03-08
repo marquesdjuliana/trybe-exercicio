@@ -8,15 +8,17 @@ const rectangle2 = [3, 5];
 const rectangle3 = [6, 9];
 const rectangles = [rectangle1, rectangle2, rectangle3];
 const funcao = rectangles.forEach((rectangle) => {
-  console.log(rectangleArea(...rectangle)); // Altere o parâmetro recebido por rectangleArea() // rest oper
+  console.log(rectangleArea(...rectangle)); // spread operator
 });
 console.log(funcao);
 
 //Exercício 02:
 // Crie uma função sum que, dado um número ilimitado de parâmetros, retorna a soma desses parâmetros. 
-// Ao chamar a função dessa forma : sum(4,5,6), o número 15 deve ser retornado.
 
-// escreva sum aqui:
+
+const sum = (...numbers) => numbers.reduce(((acc, curr) => acc + curr), 0);  //rest parâmetro 
+console.log(sum(1, 2, 3));
+
 
 // Exercício 03:
 // Escreva a função personLikes, que recebe como parâmetro os objetos alex ou gunnar. 
@@ -36,14 +38,9 @@ const gunnar = {
   likes: ['hiking', 'scuba diving', 'taking pictures'],
   nationality: 'Icelandic',
 };
-
-// complete a assinatura da função abaixo
-const personLikes = () => `${name} is ${age} years old and likes ${likes.join(', ')}.`;
-// <nome> tem <anos de idade> e gosta de <gostos da pessoa>
-
-// Retornos esperados:
-console.log(personLikes(alex)); // 'Alex is 26 years old and likes fly fishing.'
-console.log(personLikes(gunnar)); // 'Gunnar is 30 years old and likes hiking, scuba diving, taking pictures.'
+const personLikes = ({ name, age, likes}) => `${name} is ${age} years old and likes ${likes.join(', ')}.`; // object destructuring
+console.log(personLikes(alex)); 
+console.log(personLikes(gunnar)); 
 
 // Exercício 04:
 // Escreva uma função filterPeople que, dada uma lista de pessoas, retorna todas as pessoas australianas que nasceram no século 20:
@@ -73,10 +70,17 @@ const people = [
     bornIn: 2001,
     nationality: 'Brazilian',
   },
-  // bornIn: nascido em
 ];
 
-// escreva filterPeople abaixo
+const filterPeople = (arrayObj) => 
+  arrayObj.filter(( {bornIn,  nationality }) =>
+   nationality === 'Australian' && bornIn > 1900 & bornIn <= 2000);
+
+  console.log(filterPeople(people));
+  arrayObj.filter(( {bornIn,  nationality }) =>
+   nationality === 'Australian' && bornIn > 1900 & bornIn <= 2000);
+
+  console.log(filterPeople(people));
 
 
 
