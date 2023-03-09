@@ -77,12 +77,16 @@ console.log(ordenarAtaque(personagens));
 
 // Faça uma função que retorne a somatoria de todos os ataques
 // Esperado: "O ataque total é 70"
-const totalAtk = () => {
-  let total = 0;
-  personagens.forEach((classe) => (total += classe.status.atk));
-  return `O Ataque total é ${total}`;
-};
-console.log(totalAtk());
+// const totalAtk = () => {
+//   let total = 0;
+//   personagens.forEach((classe) => (total += classe.status.atk));
+//   return `O Ataque total é ${total}`;
+// };
+// console.log(totalAtk());
+
+const totalAtak = (() => personagens.reduce((acc, curr) => acc + curr.status.atk, 0)
+);
+console.log(totalAtak());
 
 // Tentativa de reduce:
 // const totalAtak = (array) => {
