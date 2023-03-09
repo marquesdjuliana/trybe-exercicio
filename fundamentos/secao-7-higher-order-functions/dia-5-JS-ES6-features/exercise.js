@@ -22,29 +22,31 @@ console.log(toObject(palio));
 // Escreva uma função greet que, dado o nome de uma pessoa, retorna uma mensagem de cumprimento. Um parâmetro adicional pode ser passado para alterar o cumprimento utilizado:
 
 
-const greet = (cumprimento = 'oi', nome) => `${cumprimento}, ${nome}!`;
-console.log(greet());
+const greet = (name, cumprimento = 'Oi') => `${cumprimento}, ${name}!`;
+
+console.log(greet('John')); 
 
 // 04: Escreva uma função getLastName que receba como parâmetro um objeto contendo informações de uma pessoa. 
 // Essa função deve retornar a propriedade lastName para o objeto passado, porém, caso o objeto não tenha essa propriedade, a função deve retornar a mensagem lastName não preenchido.
 
-const student1 = {
-  name: `Claudia`,
-  lastName: `Farias`,
-  age: 23,
+// const student1 = {
+//   name: `Claudia`,
+//   lastName: `Farias`,
+//   age: 23,
+// }
+
+// const student2 = {
+//   name: `Vitor`,
+//   age: 20,
+// }
+
+const getLastName = (objStudent) => {
+  const { lastName = `lastName não preenchido` } = objStudent;
+  return lastName;
 }
 
-const student2 = {
-  name: `Vitor`,
-  age: 20,
-}
-
-const getLastName = (student) => student.lastName;
-
-
-
-console.log(getLastName(student1));
-console.log(getLastName(student2));
+// console.log(getLastName(student1));
+// console.log(getLastName(student2));
 
 // 05:
 // Usando array destructuring, armazene cada nome presente na variável moreStudents em variáveis separadas:
@@ -55,6 +57,6 @@ const moreStudents = [
 ];
 
 // Escreva seu código aqui
-const [] = moreStudents;
+const [ student1, [student2, student3], [student4, student5]] = moreStudents;
 
 console.log(student1, student2, student3, student4, student5);
