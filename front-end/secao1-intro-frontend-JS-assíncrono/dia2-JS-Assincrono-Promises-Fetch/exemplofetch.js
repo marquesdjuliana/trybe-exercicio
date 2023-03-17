@@ -4,8 +4,6 @@ fetch("https://api.goprogram.ai/inspiration")
   .then(data => console.log(`"${data.quote}" | ${data.author}`));
 
 
-
-
 // Requisição GET sem nenhuma configuração - recupera as informações de um produto.
 fetch('https://dummyjson.com/products/27')
 .then((response) => response.json())
@@ -26,4 +24,4 @@ body: JSON.stringify({
 }),
 })
 .then((response) => response.json())
-.then((data) => console.log('POST com headers e body', data));
+.then((data) => console.log('POST com header e body', data));
