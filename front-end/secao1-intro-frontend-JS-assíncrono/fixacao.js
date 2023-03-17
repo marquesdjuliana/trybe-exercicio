@@ -16,11 +16,10 @@ const randomPromise = () => new Promise((resolve, reject) => {
   }, 1000);
 });
 
-randomPromise()
-  .then(response => {
+randomPromise().then(response => {
     console.log(`Promise resolvida. O número gerado é ${response}`);
-  });
-  .catch(error => {
+  }).catch(error => {
     console.log(`Promise rejeitada: ${error.message}`);
   });
+
   
