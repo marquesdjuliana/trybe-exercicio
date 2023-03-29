@@ -1,0 +1,1 @@
+Os exercícios desenvolvidos em frontend requer instalação de VITE e/ou create react app para funcionar em vias de fato. Estão sendo salvos aqui apenas como forma de arquivo, para eventual consulta. 
