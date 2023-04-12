@@ -26,7 +26,7 @@ class DadJoke extends React.Component {
   // }
 
 
-  // E na sintaxe abaixo, antes dela disparar o state tenho o 'loading: true' -> não quero que renderiza nada enquanto ta carregando/até terminar de fazer o state
+  // E na sintaxe abaixo: antes dela disparar o state tenho o 'loading: true' -> não quero que renderiza nada enquanto ta carregando/até terminar de fazer o state
   async fetchJoke() {
     this.setState(
       { loading: true }, // primeiro parâmetro;
