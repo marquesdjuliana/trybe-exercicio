@@ -45,7 +45,7 @@ class App extends React.Component {
             <div>
               <img src={ imageUrl } alt="Doguinho aleatório" />
               <button type="button" onClick={ this.fetchDog }>
-                Novo doguinho!
+                Novo doguinho
               </button>
             </div>) }
       </>
