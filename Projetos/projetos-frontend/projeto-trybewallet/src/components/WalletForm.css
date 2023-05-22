@@ -1,0 +1,39 @@
+.formExpenses {
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 0 auto;
+  max-width: 100%;
+  padding: 20px;
+}
+
+.formExpenses form {
+  display: flex;
+  flex-direction: column;
+}
+
+.formExpenses label {
+  margin-bottom: 10px;
+}
+
+.formExpenses , .formExpenses select {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 8px;
+  width: 100%;
+}
+
+.formExpenses button {
+  background-color: #4f926b;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-weight: 700;
+  margin-top: 20px;
+  padding: 10px 15px;
+}
+
+.formExpenses button:hover {
+  background-color: #1f5f2d;
+}

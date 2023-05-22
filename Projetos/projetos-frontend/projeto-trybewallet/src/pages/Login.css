@@ -1,0 +1,52 @@
+form {
+  align-items: center;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  margin: 50px auto;
+  padding: 50px;
+  width: 300px;
+}
+
+form label {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+form input {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  padding: 8px 12px;
+  width: 100%;
+}
+
+form button {
+  background-color: #4f926b;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease-in-out;
+  width: 100%;
+}
+
+form button:hover {
+  background-color: #1f5f2d;
+}
+
+form button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+form div {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
