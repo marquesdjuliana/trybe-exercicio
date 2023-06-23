@@ -1,0 +1,9 @@
+.recipe-detail-card img {
+  width: 100px;
+}
+
+.carousel {
+  display: flex;
+  overflow-x: scroll;
+  width: 150px;
+}

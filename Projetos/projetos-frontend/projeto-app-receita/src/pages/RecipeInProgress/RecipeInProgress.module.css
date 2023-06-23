@@ -1,0 +1,7 @@
+.ingredient {
+  text-decoration: none;
+}
+
+.checkedIngredient {
+  text-decoration: line-through solid black;
+}
