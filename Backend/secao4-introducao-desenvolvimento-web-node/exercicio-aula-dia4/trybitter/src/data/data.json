@@ -1,0 +1,53 @@
+{
+  "posts": [
+    {
+      "author": "Juliana",
+      "title": "postagem",
+      "description": "aquiiiiiiiiiii",
+      "id": 1,
+      "createdAt": "2023-07-28T16:42:08.565Z",
+      "updateAt": "2023-07-28T16:42:08.565Z"
+    },
+    {
+      "author": "Juliana",
+      "title": "postagem",
+      "description": "aquiiiiiiiiiii",
+      "id": 2,
+      "createdAt": "2023-07-28T16:42:10.030Z",
+      "updateAt": "2023-07-28T16:42:10.030Z"
+    },
+    {
+      "author": "Juliana",
+      "title": "postagem",
+      "description": "aquiiiiiiiiiii",
+      "id": 3,
+      "createdAt": "2023-07-28T16:42:10.709Z",
+      "updateAt": "2023-07-28T16:42:10.709Z"
+    },
+    {
+      "author": "Juliana",
+      "title": "postagem",
+      "description": "aquiiiiiiiiiii",
+      "id": 4,
+      "createdAt": "2023-07-28T16:42:11.380Z",
+      "updateAt": "2023-07-28T16:42:11.380Z"
+    },
+    {
+      "author": "Juliana",
+      "title": "postagem",
+      "description": "aquiiiiiiiiiii",
+      "id": 5,
+      "createdAt": "2023-07-28T16:42:37.682Z",
+      "updateAt": "2023-07-28T16:42:37.682Z"
+    },
+    {
+      "author": "Juliana",
+      "title": "postagem",
+      "description": "aquiiiiiiiiiii",
+      "id": 6,
+      "createdAt": "2023-07-28T16:43:52.506Z",
+      "updateAt": "2023-07-28T16:43:52.506Z"
+    }
+  ],
+  "postsAutoIncrement": 7
+}
