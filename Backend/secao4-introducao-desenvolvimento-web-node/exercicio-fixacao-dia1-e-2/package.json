@@ -5,19 +5,23 @@
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node ."
+    "start": "node .",
+    "serve": "node src/server.js",
+    "serve:dev": "nodemon src/server.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "axios": "^1.4.0",
+    "express": "^4.18.2",
     "node-fetch": "^2",
     "readline-sync": "^1.4.10"
   },
   "devDependencies": {
     "eslint": "^8.45.0",
     "eslint-config-trybe-backend": "^2.1.0",
-    "eslint-config-xo": "^0.43.1"
+    "eslint-config-xo": "^0.43.1",
+    "nodemon": "^3.0.1"
   }
 }
