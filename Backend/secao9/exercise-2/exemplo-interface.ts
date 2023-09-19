@@ -1,0 +1,18 @@
+interface MyInterface {
+  myNumber: number;
+  myFunc(myParam: number): string;
+}
+
+class MyClass implements MyInterface {
+  constructor(public myNumber: number) { }
+
+  myFunc(myParam: number): string {
+    return `myNumber + myParam: ${this.myNumber + myParam}`;
+  }
+}
+
+const myObject = new MyClass(2);
+console.log(myObject.myNumber);
+//retorna:2
+console.log(myObject.myFunc(4)); 
+// retorna: myNumber + myParam: 6
