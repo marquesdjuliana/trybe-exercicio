@@ -1,0 +1,6 @@
+# Arquivos e diretórios gerados automaticamente
+bin/
+obj/
+
+# Configurações específicas do ambiente de desenvolvimento
+.vscode/
